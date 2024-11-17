@@ -1,1 +1,2 @@
-https://daniil445.github.io/rsschool-cv/
+# rsschool-cv
+learning repository
