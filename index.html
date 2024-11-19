@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
   </head>
   <body>
+<header>
     <aside>
       <nav>
         <ul>
@@ -21,26 +23,32 @@
         </ul>
       </nav>
     </aside>
-    <h2 id="about">About myself</h2>
-	<h3 >Hello, <br> my name is <br> Daniil Romaniuta.</h3>
-<a href="https://www.linkedin.com/in/daniil-romaniuta-145b57311/"><img width="120px" height="140px" src="my.jpg" alt="my photo"></a>
-      <section>
-        <h4>contacts</h4>
-        <ul>
-          <li>monah445@gmail.com</li>
-          <li>https://www.linkedin.com/in/daniil-romaniuta-145b57311/</li>
-        </ul>
-      </section>
-      <section>
+</header>
+
+<main>
+<h1>CV</h1>
+<h2 class="about">About myself</h2>
+	<h3 >Hello, my name is Daniil Romaniuta.</h3>
+<a href="https://www.linkedin.com/in/daniil-romaniuta-145b57311/"><img width="10%" height="10%" src="my.jpg" alt="Daniil's photo"></a>
+<h3>Goal's</h3>
       <span>I'm looking for a professional team, who keep up with the times, and not afraid difficult tasks. 
 My goal is to grow in a team of people who are just as motivated as I am. I absorb information on the 
 fly and have never violated deadlines due to my own fault, either during training or at work. 
 I have communication skills and perceive expert opinion as the main thing. I understand perfectly 
 well that my status is now low, but it is growing steadily, and I am confident that the work team 
 will instill in me the necessary expert habits of behavior.</span>
+
+      <section>
+<h2>Contacts</h2>
+        <ul>
+          <li>monah445@gmail.com</li>
+          <li>https://www.linkedin.com/in/daniil-romaniuta-145b57311/</li>
+        </ul>
+      </section>
+      <section>
       </section>
 
-      <h2 id="knowledge">knowledge</h2>
+      <h2 id="knowledge">Knowledge</h2>
       <section >
         <h3 >My main skills</h3>
         <ul>
@@ -55,38 +63,49 @@ will instill in me the necessary expert habits of behavior.</span>
 
       <section>
         <div>
-          <h3 >Examples</h3>
+          <h2 >Examples</h2>
         </div>
-        <blockquote id="code">
-<p>if(abstruct_name.contains("Equilateral polygon")){<br>
-	multi_prim.clear();<br>
-	for(int var = 0; var < multi_num; ++var) {<br>
-		double radius=sqrt(pow(start_painting.y()- stop_painting.y(),2)+pow(start_painting.x()- stop_painting.x(),2));<br>
-		double fi =atan2(start_painting.y()- stop_painting.y(),start_painting.x()-stop_painting.x());
-		QPointF point;<br>
-		point.setX(start_painting.x()+radius*cos(M_PI+fi+2*M_PI*var/multi_num));<br>
-		point.setY(start_painting.y()+radius*sin(M_PI+fi+2*M_PI*var/multi_num));<br>
-		multi_prim.append(point);<br>
-	}<br>
-	polyline_prim<<multi_prim;<br>
-	polyline_prim<<multi_prim.first();<br>
+        <div>
+<p id="code">
+if(abstruct_name.contains("Equilateral polygon")){<br>
+ &#9;multi_prim.clear();<br>
+ &#9;for(int var = 0; var < multi_num; ++var) {<br>
+ &#9; &#9;double radius=sqrt(pow(start_painting.y()- stop_painting.y(),2)+pow(start_painting.x()- stop_painting.x(),2));<br>
+ &#9; &#9;double fi =atan2(start_painting.y()- stop_painting.y(),start_painting.x()-stop_painting.x());
+ &#9; &#9;QPointF point;<br>
+ &#9; &#9;point.setX(start_painting.x()+radius*cos(M_PI+fi+2*M_PI*var/multi_num));<br>
+ &#9; &#9;point.setY(start_painting.y()+radius*sin(M_PI+fi+2*M_PI*var/multi_num));<br>
+ &#9; &#9;multi_prim.append(point);<br>
+ &#9;}<br>
+ &#9;polyline_prim.append(multi_prim);<br>
+ &#9;polyline_prim.append(multi_prim.first());<br>
 }</p>
-</blockquote>
+</div>
+
+<h2>Links to source code</h2>
+        <ul>
+          <li><a href=https://github.com/daniil445/rsschool-cv">The best project i have seen </a></li>
+          <li><a href="https://github.com/daniil445/rsschool-cv">My project</a></li>
+        </ul>
+      </section>
 
       </section>
 
       <section>
-        <h3>education</h3>
+        <h2>Education</h3>
         <ul>
           <li>Student RS School</li>
+<ul>
+
           <li>November 2024 - now</li>
           <li>Learning Marcdown, HTML and Git.</li>
+ </ul>
         </ul>
       </section>
 
       <section>
         <div>
-          <h3>English</h3>
+          <h2>English</h2>
         </div>
         <span >I use duolingo to maintain my English. Last quarter I visited London and Tisbury where <br>
  I practiced my communication skills with a nice elderly couple for 2 weeks.
