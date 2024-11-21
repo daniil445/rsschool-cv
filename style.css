@@ -1,0 +1,48 @@
+
+body {
+	--primary-c: #ff4646;
+	background-color: var(--primary-c);
+	font-family: sans-serif;
+	margin: auto;
+	width: 1440px;
+}
+header {
+	height: 64px;
+	background-color: white;
+	padding: 0px 8px;
+	font: Montserrat;
+	display:grid;
+}
+nav-btn {
+	margin: 12px 20px;
+}
+nav {
+	justify-content:left;
+}
+
+h1 {
+	background-color: white;
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-style: bold;
+	font-size: 30px;
+}
+#code{
+text-align: left;
+white-space: pre;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+footer{
+text-align: center;
+}
