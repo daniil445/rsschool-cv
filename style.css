@@ -1,48 +1,280 @@
-
 body {
-	--primary-c: #ff4646;
-	background-color: var(--primary-c);
-	font-family: sans-serif;
+	--primary: #FF4646;
+	--primary-10: #FF46461A;
+	--dark: #181C29;
+	--static-white: #FFFFFF;
+	--static-white-40: #FFFFFF66;
+	--static-white-20: #FFFFFF33;
+	--tag-purple: #4361FF;
+	--tag-pink: #FF43F7;
+	--tag-green: #06A44F;
+	--content-background: #ECF3F8;
+	--overlay: #181C29CC;
+	background-color: var(--static-white);
 	margin: auto;
+	padding: 0px;
 	width: 1440px;
+	color: var(--static-white);
+	text-align: center;
+}
+
+main {
+	background-color: var(--primary);
+	background-image: url("christmas-shop/img/snow.png");
+	background-position-y: -38px;
+	background-size: 100% auto;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
 }
 header {
+	width: 1276px;
 	height: 64px;
-	background-color: white;
+	background-color: var(--static-white);
+	margin: auto;
+}
+.navigation {
+	display: grid;
+	grid-template-columns: 141px 1fr 88px 88px 88px 88px;
+	align-items: stretch;
+	padding: 12px 0px;
+	margin: auto;
+	height: 40px;
+	gap: 12px;
+	list-style-type: none;
+}
+.footer-navigation {
+	display: flex;
+	justify-content:center;
+	align-items: stretch;
+	padding: 12px 0px;
+	margin: auto;
+	height: 40px;
+	gap: 12px;
+	list-style-type: none;
+}
+
+.nav-item {
+	width: 78px;
+	height: 40px;
+	gap: 0px;
+	color: var(--dark);
+}
+
+footer {
+	height: 376px;
+	width: 1276px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 12px;
+	margin: auto;
+	padding:60px 8px;
+	color: var(--dark);
+	list-style-type: none;
+}
+.footer {
+	background-color: var(--content-background);
+	gap:12px;
+	border-radius: 20px;
+}
+.item-bot {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+.seckond-item {
+	width: 1276px;
+	height: 528px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: auto;
+	background-color: var(--static-white);
+	border-radius: 20px;
+	color: var(--dark);
+}
+
+.text-description {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	padding: 120px 60px;
+	gap:0px;
+	width: 426px;
+	height: 328px;
+}
+img {
+	border-radius: 20px;
+}
+
+.third-item {
+	width: 1276px;
+	height: 488px;
+	padding: 60px 0px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-evenly;
+}
+
+.slider {
+	width: 1276px;
+	height: 200px;
+	display: flex;
+	align-items: center;
 	padding: 0px 8px;
-	font: Montserrat;
-	display:grid;
+	gap: 20px;
 }
-nav-btn {
-	margin: 12px 20px;
+.slider img {
+	width: 200px;
+	height: 200px;
 }
-nav {
-	justify-content:left;
+.right {
+	justify-content: right;
+}
+button {
+	transition-duration: 0.4s;
+	background-color: var(--primary);
+	color: var(--static-white);
+	border: 1px solid var(--static-white);
+	border-radius: 20px;
+	width: 56px;
+	height: 56px;
+}
+
+button:hover {
+	background-color: var(--static-white);
+	color: var(--primary);
+}
+
+.fourt-item {
+	width: 1276px;
+	height: 488px;
+	margin: auto;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+	
+.fourt-item img {
+		width: 310px;
+		height: 230px;
+}
+
+.gifts {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 12px;
+	margin: auto;
+}
+.gift {
+	background-color: var(--content-background);
+	border-radius: 20px;
+	gap: 0px;
+	display: grid;
+	grid-template-rows: 230px 1fr;
+	color: var(--dark);
+}
+.gift-text {
+	text-align: left;
+	padding: 0px 20px;
+	background-color: var(--static-white);
+	border-radius: 20px;
+}
+.fifth-item {
+	width: 1440px;
+	height: 558px;
+	background-image: url("christmas-shop/img/bg-forest.png");
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	padding: 60px 0px;
+	border-radius: 20px;
+	background-size: 100% auto;
+	flex-direction: column;
+	align-content: center;
 }
 
 h1 {
-	background-color: white;
-	font-size: 40px;
-	margin-top: 0;
-	margin-bottom: 15px;
+	font: 600 32px/150% "Montserrat";
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
 }
-
 h2 {
-	font-style: bold;
-	font-size: 30px;
+	font: 600 24px/152% "Montserrat";
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
 }
-#code{
-text-align: left;
-white-space: pre;
+h3 {
+	font: 600 16px/152% "Montserrat";
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+h4 {
+	font: 600 12px/130% "Montserrat";
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+p {
+	font: 400 16px/148% "Montserrat";
+}
+.action-l {
+	font: 600 24px/152% "Montserrat";
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+.action-s {
+	font: 600 12px/130% "Montserrat";
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.beauty-t {
+	font: 400 24px/100% "Allura";
+	letter-spacing: 0.05em;
+}
+.slider-t {
+	font: 600 80px "Montserrat";
+	text-transform: uppercase;
+}
+.top_item {
+	background-image: url("christmas-shop/img/ball.png");
+	background-size: 100% auto;
+	background-position-y: -45px;
+	width: 1440px;
+	height: 524px;
+	flex-direction: column;
+	align-content: center;
+}
+.btn {
+	background-color: var(--dark);
+	padding: 20px 12px;
+	width: 235px;
+	border-radius: 20px;
+	margin: auto;
+}
+.media {
+	background-size: 24px 24px;
+	width: 40px;
+	height:40px;
+}
+.paint {
+	width: 80px;
+	height: 80px;
+}
+.red {
+	color: var(--primary);
+}
+.blue {
+	color: var(--tag-purple);
+}
+.pink {
+	color: var(--tag-pink);
+}
+.green {
+	color: var(--tag-green);
 }
 
-.established {
-  font-style: italic;
-}
 
-h1, h2, p {
-  text-align: center;
-}
-footer{
-text-align: center;
+
+.footer-bottom-list {
+	list-style-type: none;
 }
