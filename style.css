@@ -11,7 +11,7 @@ body {
 	--content-background: #ECF3F8;
 	--overlay: #181C29CC;
 	background-color: var(--static-white);
-	margin: auto;
+	margin: 0px auto;
 	padding: 0px;
 	width: 1440px;
 	color: var(--static-white);
@@ -30,9 +30,8 @@ main {
 header {
 	width: 1276px;
 	height: 64px;
+	margin: 0px auto;
 	background-color: var(--static-white);
-
-	margin: auto;
 }
 nav {
 	height: 64px;
@@ -78,26 +77,16 @@ nav {
 	color: var(--primary);
 }
 
-
-footer {
-	height: 376px;
-	width: 1276px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 12px;
-	margin: auto;
-	padding:60px 8px;
-	color: var(--dark);
-	list-style-type: none;
-}
-.footer {
-	background-color: var(--content-background);
-	gap:12px;
-	border-radius: 20px;
-}
-.item-bot {
-	grid-column-start: 1;
-	grid-column-end: 4;
+.top_item {
+	background-image: url("christmas-shop/img/ball.png");
+	background-size: 100% auto;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	width: 1440px;
+	height: 524px;
+	margin: 0px auto;
+	flex-direction: column;
+	align-content: center;
 }
 
 .seckond-item {
@@ -256,21 +245,14 @@ p {
 }
 .beauty-t {
 	font: 400 24px/100% "Allura";
+	margin: 0px;
 	letter-spacing: 0.05em;
 }
 .slider-t {
 	font: 600 80px "Montserrat";
 	text-transform: uppercase;
 }
-.top_item {
-	background-image: url("christmas-shop/img/ball.png");
-	background-size: 100% auto;
-	background-position-y: -45px;
-	width: 1440px;
-	height: 524px;
-	flex-direction: column;
-	align-content: center;
-}
+
 .btn {
 	background-color: var(--dark);
 	padding: 20px 12px;
@@ -298,6 +280,29 @@ p {
 }
 .green {
 	color: var(--tag-green);
+}
+
+footer {
+	height: 376px;
+	width: 1276px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 12px;
+	margin: auto;
+	padding: 60px 8px;
+	color: var(--dark);
+	list-style-type: none;
+}
+
+.footer {
+	background-color: var(--content-background);
+	gap: 12px;
+	border-radius: 20px;
+}
+
+.item-bot {
+	grid-column-start: 1;
+	grid-column-end: 4;
 }
 
 .footer-bottom-list {
