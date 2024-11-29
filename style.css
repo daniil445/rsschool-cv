@@ -31,15 +31,18 @@ header {
 	width: 1276px;
 	height: 64px;
 	background-color: var(--static-white);
+
 	margin: auto;
 }
+nav {
+	height: 64px;
+}
 .navigation {
+	height: 64px;
 	display: grid;
 	grid-template-columns: 141px 1fr 88px 88px 88px 88px;
-	align-items: stretch;
-	padding: 12px 0px;
+	align-items: center;
 	margin: auto;
-	height: 40px;
 	gap: 12px;
 	list-style-type: none;
 }
@@ -55,11 +58,26 @@ header {
 }
 
 .nav-item {
-	width: 78px;
-	height: 40px;
 	gap: 0px;
 	color: var(--dark);
 }
+.navigation button {
+	width:auto;
+	transition-duration: 0.4s;
+	padding:0px 20px;
+	background-color: var(--static-white);
+	color: var(--dark);
+	border: 1px solid var(--static-white);
+	border-radius: 20px;
+	margin:auto;
+}
+
+
+.navigation button:hover {
+	background-color: var(--primary-10);
+	color: var(--primary);
+}
+
 
 footer {
 	height: 376px;
@@ -114,9 +132,11 @@ img {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	justify-content:space-evenly;
 }
-
+.logo {
+	display: flex;
+	align-items: center;
+}
 .slider {
 	width: 1276px;
 	height: 200px;
@@ -142,10 +162,11 @@ button {
 	height: 56px;
 }
 
-button:hover {
-	background-color: var(--static-white);
-	color: var(--primary);
-}
+
+	button:hover {
+		background-color: var(--static-white-20);
+		color: var(--static-white-20);
+	}
 
 .fourt-item {
 	width: 1276px;
@@ -181,7 +202,13 @@ button:hover {
 	background-color: var(--static-white);
 	border-radius: 20px;
 }
-.fifth-item {
+.gift-text-no-margin {
+	border-radius: 0px;
+	margin: 0px;
+	vertical-align: text-top;
+	height:4em;
+}
+	.fifth-item {
 	width: 1440px;
 	height: 558px;
 	background-image: url("christmas-shop/img/bg-forest.png");
@@ -273,8 +300,29 @@ p {
 	color: var(--tag-green);
 }
 
-
-
 .footer-bottom-list {
 	list-style-type: none;
+}
+.main-gift {
+	padding:45px 0px;
+	background-image: url("christmas-shop/img/bg-garland.png");
+	background-position-y: top;
+	background-repeat: no-repeat;
+}
+.gift-menu {
+	margin: auto;
+	display: flex;
+	gap: 8px;
+}
+.gift-menu button {
+		padding: 12px 20px;
+		border-radius:10px;
+		border: none;
+		width: auto;
+		height: auto;
+}
+
+.resize-gift {
+	padding: 12px 20px;
+	height: auto;
 }
