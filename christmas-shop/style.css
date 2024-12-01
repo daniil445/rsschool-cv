@@ -338,16 +338,17 @@ footer {
     width: 1276px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
+    gap: 0px;
+    grid-column-gap: 12px;
+    grid-row-gap: 36px;
     margin: auto;
-    padding: 50px 8px;
+    padding: 80px 8px;
     color: var(--dark);
     list-style-type: none;
 }
 
 .footer {
     background-color: var(--content-background);
-    gap: 12px;
     border-radius: 20px;
 }
 
