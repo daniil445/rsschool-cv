@@ -340,7 +340,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
     margin: auto;
-    padding: 60px 8px;
+    padding: 50px 8px;
     color: var(--dark);
     list-style-type: none;
 }
