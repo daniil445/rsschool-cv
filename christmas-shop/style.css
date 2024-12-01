@@ -24,13 +24,13 @@ body {
 
 main {
     background-color: var(--primary);
-    background-image: url("christmas-shop/img/snow.png");
+    background-image: url("img/snow.png");
     background-position-y: -38px;
     background-size: 100% auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 0px;
     overflow: hidden;
 }
 
@@ -101,7 +101,7 @@ nav {
 }
 
 .top_item {
-    background-image: url("christmas-shop/img/ball.png");
+    background-image: url("img/ball.png");
     background-size: 100% auto;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ button {
 .fifth-item {
     width: 1440px;
     height: 558px;
-    background-image: url("christmas-shop/img/bg-forest.png");
+    background-image: url("img/bg-forest.png");
     background-position-y: bottom;
     background-repeat: no-repeat;
     padding: 60px 0px;
@@ -381,7 +381,7 @@ footer {
 
 .main-gift {
     padding: 45px 0px;
-    background-image: url("christmas-shop/img/bg-garland.png");
+    background-image: url("img/bg-garland.png");
     background-position-y: top;
     background-repeat: no-repeat;
 }
