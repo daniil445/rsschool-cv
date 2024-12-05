@@ -52,7 +52,7 @@ nav {
     grid-template-columns: 141px 1fr 88px 88px 88px 88px;
     align-items: center;
     margin: auto;
-    gap: 12px;
+    gap: 0px;
     list-style-type: none;
     padding-inline-start: 0px;
 }
@@ -63,7 +63,6 @@ nav {
     align-items: stretch;
     padding: 12px 0px;
     margin: 0px;
-    height: 40px;
     gap: 12px;
     list-style-type: none;
 }
@@ -88,6 +87,10 @@ nav {
     background-color: var(--static-white);
     color: var(--dark);
 }
+#chosed {
+    background-color: var(--primary-10);
+    color: var(--primary);
+}
 #logo {
     padding: 0px;
     background-color: var(--static-white);
@@ -98,17 +101,19 @@ nav {
 .navigation button:hover {
     background-color: var(--primary-10);
     color: var(--primary);
+    cursor: pointer;
 }
 
 .top_item {
     background-image: url("img/ball.png");
-    background-size: 100% auto;
-    background-position-y: center;
+    /*background-size: 100% auto;*/
+    background-size: cover;
+    background-position-y: -40px;
     background-repeat: no-repeat;
     width: 1440px;
     height: 524px;
     margin: 0px auto;
-    padding:20px 0px;
+    padding: 20px 0px;
     flex-direction: column;
     align-content: center;
 }
@@ -128,11 +133,15 @@ nav {
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 120px 60px;
-    gap: 0px;
+    justify-content:flex-start;
+    padding: 160px 60px;
+    margin:0px;
+    gap: 20px;
     width: 426px;
     height: 328px;
+}
+#zero-margin {
+    margin: 0px;
 }
 
 img {
@@ -193,8 +202,7 @@ button {
 
 .fourt-item {
     width: 1276px;
-    height: 488px;
-    margin: auto;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
 }
@@ -219,6 +227,10 @@ button {
     grid-template-rows: 230px 1fr;
     color: var(--dark);
 }
+    .gift:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
 
 .gift-text {
     text-align: left;
@@ -305,6 +317,11 @@ p {
     border-radius: 20px;
     margin: auto;
 }
+    .btn:hover {
+        background-color: var(--static-white);
+        color: var(--dark);
+        cursor: pointer;
+    }
 
 .media {
     background-size: 24px 24px;
@@ -334,7 +351,6 @@ p {
 }
 
 footer {
-    height: 376px;
     width: 1276px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -342,7 +358,7 @@ footer {
     grid-column-gap: 12px;
     grid-row-gap: 36px;
     margin: auto;
-    padding: 80px 8px;
+    padding: 60px 8px;
     color: var(--dark);
     list-style-type: none;
 }
@@ -350,11 +366,24 @@ footer {
 .footer {
     background-color: var(--content-background);
     border-radius: 20px;
+    padding:20px;
+    margin:0px;
+}
+    .footer:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
+
+.link:hover {
+    color: var(--primary);
+    cursor:pointer;
 }
 
 .item-bot {
     grid-column-start: 1;
     grid-column-end: 4;
+    align-content: end;
+    margin: 0px;
 }
 
 .footer-bottom-list {
@@ -400,6 +429,10 @@ footer {
         width: auto;
         height: auto;
     }
+        .gift-menu button:hover {
+            background-color: var(--static-white-20);
+            cursor: pointer;
+        }
 
 .resize-gift {
     padding: 12px 20px;
