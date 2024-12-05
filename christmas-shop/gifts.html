@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
     <link rel="icon" href="img/showflake.ico">
     <link rel="stylesheet" href="style.css">
+    <title>Gift Shop</title>
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                     </div>
                 </li>
                 <li></li>
-                <li><button class="nav-item h4" id="empty">gifts</button></li>
+                <li><button class="nav-item h4" id="chosed">gifts</button></li>
                 <li><button onclick="window.location.href='index.html#about'" class="nav-item h4">about</button></li>
                 <li><button onclick="window.location.href='index.html#best'" class="nav-item h4">best</button></li>
                 <li><button onclick="window.location.href='#contacts'" class="nav-item h4">contacts</button></li>
@@ -30,7 +31,7 @@
     <main class="main-gift">
         <h1>Achieve health,<br>harmony, and<br> inner strength</h1>
         <div class="gift-menu">
-            <button class="action-s">All</button>
+            <button class="action-s" style="background-color: var(--static-white-20);">All</button>
             <button class="action-s">For Work</button>
             <button class="action-s">For health</button>
             <button class="action-s">For harmony</button>
@@ -129,21 +130,21 @@
     <footer id="contacts">
         <div class="footer" onclick="window.location='tel:+375291112233';">
             <img class="paint" src="img/Home/santa-claus.svg" alt="santa">
-            <h2>+375 (29) 111-22-33</h2>
-            <h3>Call Us</h3>
+            <h2 style="margin: 0px;">+375 (29) 111-22-33</h2>
+            <h3 style="margin: 0px;">Call Us</h3>
         </div>
-        <div class="footer" onclick="window.open='https://www.google.com/maps/@32.0760871,-81.0930246,15z?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoJLDEwMjExMjMzSAFQAw%3D%3D';">
+        <div class="footer" onclick="window.open('https://maps.app.goo.gl/j2wtk37ViBAKNdJZA')">
             <img class="paint" src="img/Home/christmas-tree.svg" alt="tree">
-            <h2>Magic forest</h2>
-            <h3>meet us</h3>
+            <h2 style="margin: 0px;">Magic forest</h2>
+            <h3 style="margin: 0px;">meet us</h3>
         </div>
         <div class="footer" onclick="window.location='mailto:gifts@magic.com';">
             <img class="paint" src="img/Home/snake.svg" alt="snake">
-            <h2>gifts@magic.com</h2>
-            <h3>write us</h3>
+            <h2 style="margin: 0px;">gifts@magic.com</h2>
+            <h3 style="margin: 0px;">write us</h3>
         </div>
         <div class="item-bot">
-            <ul class="footer-navigation">
+            <ul class="footer-navigation" style="margin: 0px;">
                 <li>
                     <img class="media" src="img/icon-tele-b.png" alt="tele"
                          onmouseover="this.src='img/icon-tele-r.png'"
@@ -165,8 +166,8 @@
                          onmouseout="this.src='img/icon-x-b.png'">
                 </li>
             </ul>
-            <p>© Copyright 2025, All Rights Reserved</p>
-            <p class="beauty-t" onclick="window.location='https://rs.school/';">Made in Rolling Scopes School</p>
+            <p style="margin: 10px;">© Copyright 2025, All Rights Reserved</p>
+            <p class="beauty-t link" style="margin: 10px;" onclick="window.location='https://rs.school/';">Made in Rolling Scopes School</p>
         </div>
     </footer>
 </body></html>
